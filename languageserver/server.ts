@@ -250,6 +250,7 @@ connection.onInitialize((params: InitializeParams & { capabilities: ClientCapabi
                 // Not currently supported
                 textDocumentSync: TextDocumentSyncKind.Incremental,
                 completionProvider: {
+                    triggerCharacters: ['.'],
                     //resolveProvider: true
                 },
                 codeLensProvider: {
